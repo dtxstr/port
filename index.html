@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>dtxstr.xyz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+:root{
+  --bg:#050509;
+  --card:#242429;
+  --border:#1a1a22;
+  --text:#ffffff;
+  --muted:#9b9ba5;
+  --accent:#5865f2;
+  --radius:20px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui;
+}
+
+
+.navbar{
+  width:90%;
+  max-width:700px;
+  background:#1a1a22;
+  border:1px solid #2d2d35;
+  border-radius:16px;
+  padding:14px 0;
+  display:flex;
+  justify-content:center;
+  position:sticky;
+  top:20px;
+  margin:0 auto;
+  z-index:10;
+  box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.nav-buttons{
+  display:flex;
+  gap:40px;
+}
+
+.nav-buttons a{
+  color:var(--text);
+  text-decoration:none;
+  font-size:16px;
+  font-weight:600;
+  transition:opacity .15s;
+}
+
+.nav-buttons a:hover{
+  opacity:.6;
+}
+
+
+.section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:60px 20px;
+}
+
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:30px;
+  width:100%;
+  max-width:420px;
+  text-align:center;
+  box-shadow:0 0 40px rgba(0,0,0,.4);
+}
+
+.avatar{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0 auto 20px;
+  border:4px solid var(--accent);
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.title{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.subtitle{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.section-label{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+
+.skills{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.skill{
+  background:#1a1a22;
+  padding:12px;
+  border-radius:12px;
+  font-size:14px;
+  border:1px solid #2d2d35;
+}
+
+.divider{
+  height:18px;
+  width:100%;
+}
+
+
+.link-bar{
+  width:100%;
+  background:#1a1a22;
+  border:1px solid #2d2d35;
+  border-radius:12px;
+  padding:12px 14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  cursor:pointer;
+  text-decoration:none;
+  color:var(--text);
+  margin:22px 0 12px;
+  transition:background .15s;
+}
+
+.link-bar:hover{
+  background:#2d2d35;
+}
+
+.link-bar img{
+  width:32px;
+  height:32px;
+  border-radius:8px;
+  object-fit:cover;
+}
+
+
+.work-stack{
+  width:100%;
+  max-width:2040px;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+
+.big-banner{
+  width:100%;
+  height:600px;
+  object-fit:cover;
+  border-radius:16px;
+  border:1px solid #2d2d35;
+  box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+
+.footer-banner{
+  width:100%;
+  height:60px;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid #2d2d35;
+  box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="nav-buttons">
+    <a href="#about">About Me</a>
+    <a href="#work">Past Work</a>
+  </div>
+</div>
+
+
+<div class="section" id="about">
+  <div class="card">
+
+    <div class="avatar">
+      <img src="https://cdn.discordapp.com/avatars/794692066889564170/09976cbfffa7ecf2ab568a2250688fee.png?size=512">
+    </div>
+
+    <div class="title">Parker</div>
+    <div class="subtitle">Discord Developer, Graphic Designer</div>
+
+    <div class="section-label">Core Languages</div>
+    <div class="divider"></div>
+
+    <div class="skills">
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JSON</div>   
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section-label">Applications</div>
+    <div class="divider"></div>
+
+    <div class="skills">
+      <div class="skill">Photopea</div>
+      <div class="skill">Canva</div>
+      <div class="skill">VS Code</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section-label">Servers</div>
+
+    <a class="link-bar" href="https://discord.com/invite/qualitycustoms" target="_blank">
+      <img src="https://cdn.discordapp.com/attachments/1460048253751001118/1465098150183436460/QCICON.png">
+      <span>Quality Customs</span>
+    </a>
+
+    <a class="link-bar" href="https://discord.com/invite/judah" target="_blank">
+      <img src="https://cdn.discordapp.com/icons/1408900608056098946/f23dbf16c84a265adc97e798112ecd0a.png?size=4096">
+      <span>Judah's Customs</span>
+    </a>
+
+  </div>
+</div>
+
+
+<div class="section" id="work">
+  <div class="work-stack">
+
+
+    <img class="big-banner" src="https://cdn.discordapp.com/attachments/1448095528016416800/1467276722797019279/ak_session_port_showcase.png?ex=697fcb6f&is=697e79ef&hm=c3ec308a89b9695d87c7e3e803ceb4a8485d00364cca8913c0a5035609ed50f9&">
+    <img class="footer-banner" src="https://cdn.discordapp.com/attachments/1448095528016416800/1467278286194217073/ak_footer_port_showcase.png?ex=697fcce4&is=697e7b64&hm=e16b57c1d2ac6a47eae05d937a1095a5055d4ca810ff862ea4ad67eb2036df04&">
+    <div class="divider"></div>
+    <img class="big-banner" src="https://cdn.discordapp.com/attachments/1448095528016416800/1467279768834674810/pc_dash_port_showcase.png?ex=697fce45&is=697e7cc5&hm=9fddd642f3f5a5af682fc26ade75d0f69d2adb962d3fc7ae9c997ad13b19d636&">
+    <img class="footer-banner" src="https://cdn.discordapp.com/attachments/1448095528016416800/1467279853777850510/pc_footer_port_showcase.png?ex=697fce59&is=697e7cd9&hm=d64fa9b3939d18b66bd82386d57b40168675275759758ada18c3c85b8a7d6f72&">
+
+  </div>
+</div>
+
+</body>
+</html>
